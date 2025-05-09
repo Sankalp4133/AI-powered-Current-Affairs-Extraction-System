@@ -1,0 +1,70 @@
+<!-- result.html -->
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Classification Results</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+            background: url('/static/news-background.jpg') no-repeat center center fixed;
+            background-size: cover;
+            color: white;
+        }
+        .container {
+            max-width: 800px;
+            margin: 20px;
+            padding: 20px;
+            background-color: rgba(0, 0, 0, 0.7);
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+        }
+        h2 {
+            text-align: center;
+            color: #FFD700;
+        }
+        p {
+            text-align: center;
+            font-size: 20px;
+            margin-bottom: 20px;
+            color: #f1f1f1;
+        }
+        pre {
+            background-color: rgba(255, 255, 255, 0.1);
+            padding: 15px;
+            border-radius: 5px;
+            white-space: pre-wrap;
+            word-wrap: break-word;
+            color: #ddd;
+        }
+        a {
+            text-decoration: none;
+            background-color: #4CAF50;
+            color: white;
+            padding: 10px 15px;
+            border-radius: 5px;
+            margin-top: 10px;
+            display: inline-block;
+            text-align: center;
+            transition: background-color 0.3s;
+        }
+        a:hover {
+            background-color: #45a049;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h2>Classified Articles</h2>
+        <p>All the best for your UPSC preparation! Stay updated and stay ahead.</p>
+        <pre>{{ output }}</pre>
+        <br>
+        <a href="/download/{{ filename }}">Download Classified Articles</a>
+    </div>
+</body>
+</html>
